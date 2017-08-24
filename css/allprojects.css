@@ -1,0 +1,41 @@
+#projects {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width:100%;
+}
+
+	#projects th {
+    border: 1px solid #ddd;
+    padding: 8px;
+	font-size:16px;
+	
+}
+
+#projects tr:nth-child(even){background-color: #f2f2f2;}
+
+#projects tr:hover {background-color: #ddd;}
+
+#projects th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #333;
+    color: white;
+	width:162px;
+}
+
+.projectdetailscol
+{
+	width:50%;
+	overlay:hidden;
+	height:40px;
+	-webkit-border-radius:5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	padding-top:7px;
+	padding-left:8px;
+	font-size:18px;
+	background:rgba(118,169,227,0.7);
+	margin-left:300px;
+	margin-top:-42px;
+	border:0px;
+}

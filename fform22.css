@@ -1,0 +1,106 @@
+body{
+	background-color:#fff5e6;
+}
+div.head {
+width:100%;
+ height:10%;
+ padding: 5px 0px 60px 20px;
+ margin: -7px 0px 0px -9px;
+ background-color:#739900;
+
+}
+ 
+
+div.formm {
+border: 2px solid #800060;
+border-radius:5px;
+margin: 30px 400px 200px 500px;
+padding: 5px 10px 50px 30px;
+background-color:#f2ebf0;
+width:25%;
+height:75%;
+}
+
+
+
+input{
+box-sizing: border-box;
+    
+    border-bottom: 2px solid #ADFF2F;
+	border-radius: 8px;
+margin: 20px 5px 0px 5px;
+	padding:0px 10px 0px 10px;
+	height:7%;
+	width:91%;
+-webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+
+	}
+
+	
+	input[type=text]:focus {
+    border: 3px solid #9900cc;
+}
+   textarea:focus{
+	   border: 3px solid #9900cc;
+   }
+   
+	#syear,#eyear{
+	height:7%;
+	width:42%;
+	float:left;
+	
+	}
+	
+	#eyear{
+	height:7%;
+	width:44%;
+	float:left;
+	margin: 2px 0px 0px 10px;
+	}
+	
+   
+   ::-webkit-input-placeholder { 
+  color: black;
+  opacity:0.8;
+   }
+  
+  #btn1,#btn2{ 
+   background-color: #9900cc;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 12px;
+    margin: 40px 5px 0px 5px;
+	padding:2px 0px 0px 3px;
+    width:30%;  
+    height:7%;
+	float:left;
+  }
+  
+  #btn2{
+	  float:left;
+	 margin:40px 0px 0px 95px;
+   width:30%;
+   height:7%;
+   border-radius:12px;
+   }
+  textarea{
+    box-sizing: border-box;
+    border-bottom: 2px solid #ADFF2F;;
+    border-radius: 8px;
+    margin: 20px 5px 0px 5px;
+	padding:0px 0px 0px 10px;
+	width:91%; 
+	overflow:auto;  
+   
+
+
+	}

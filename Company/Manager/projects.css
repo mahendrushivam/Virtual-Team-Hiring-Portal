@@ -1,0 +1,232 @@
+.close1 {
+      
+   color: #6D5A56;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #58504E;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@import "bourbon";
+
+$color-alpha: #09f;
+$base-radius: 4px;
+
+
+.box{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: block;
+  max-width: 30em;
+  margin: 0 auto;
+  border-radius: $base-radius;
+  
+  header{
+    border-bottom: 1px solid #ddd;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+  }
+  .content{
+    padding: 1em;
+  }
+}
+ .butt1 {
+   color: #fff;
+   background-color: $color-alpha;
+   border:	1px solid $color-alpha;
+   text-align: center;
+   display: inline-block;
+   vertical-align:	middle;
+   white-space:	nowrap;
+   margin: 0.6em 0.6em .6em 0;
+   padding: 0.35em .7em 0.4em;
+   text-decoration: none; 
+   width: auto;
+   position: relative;
+   border-radius:  4px;
+   user-select:none;
+   outline:	none;
+   @include transition(all, 0.25s, ease-in);
+
+  &:hover {
+   //background-color: lighten($color-alpha,10);
+   background-color:	#ddd;
+   color:	#333;
+   @include transition(all, 0.25s, ease-in); 
+  }
+ 
+  &:active {
+   background-color: #ccc;
+   box-shadow: 0 !important;
+   top: 2px;
+   @include transition(background-color, 0.2s, linear);
+   box-shadow:	inset 0 3px 5px rgba(0,0,0,.125);
+ }
+ }
+
+
+.left, .right{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.left{
+  width: 6em;
+  min-width: 6em;
+  padding-right: 1em;
+  
+  img{
+    width: 100%;
+  }
+}
+.img-holder{
+  display: block;
+  vertical-align: middle;
+  width: 2em;
+  height: 2em;
+  
+  img{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.file-wrapper {
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: relative; 
+ 
+ &:hover .btn{
+ 	background-color:	lighten($color-alpha, 10%) !important;
+ } 
+}
+
+.file-wrapper input {
+  cursor: pointer;
+  font-size: 100px;
+  height: 100%;
+  filter: alpha(opacity=1);
+  -moz-opacity: 0.01;
+  opacity: 0.01;
+  position: absolute;
+  right: 0;
+  top: 0; 
+  z-index:	9;
+}
+
+
+.select2-container{width:300px;}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.dates-wrapper {
+  background: #f0f0f0;
+  padding: 1em 1em 0 1em;
+  display: inline-block;
+}
+
+.input-text {
+  background-color: #ffffff;
+  padding: 2px 10px;
+  color: #333;
+  border: 1px solid #dddddd;
+  outline: none;
+  vertical-align: middle;
+  height: 36px;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.date-wrapper {
+  position: relative;
+  margin: 0 42px 10px 0;
+  display: inline-block;
+  .label {
+    float: left;
+    display: inline-block;
+    margin-right: 28px;
+    padding-top: 10px;
+  }
+  .input1 {
+    font-size: 15px;
+    color: #333;
+    max-width: 172px;
+    float: left;
+    margin-right: 10px;
+    input {
+      float: left;
+      width: 100%;
+      padding: 2px 10px;
+    }
+  }
+  .calendar-btn {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    float: left;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9487/icon-calendar-72x72.png);
+    background-repeat: no-repeat;
+    background-size: 36px 36px;
+  }
+}
+
+.pika-single {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  .pika-title {
+    color: #444;
+  }
+  .is-selected .pika-button {
+    border-radius: 0;
+    box-shadow: none;
+    background: #ec0000;
+  }
+  .pika-table tbody td {
+    border: 1px solid #b9b9b9;
+  }
+  .pika-button:hover {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: #868686 !important;
+  }
+  .is-today .pika-button {
+    color: #ec0000;
+  }
+  .is-today.is-selected .pika-button {
+    color: #fff;
+  }
+}
+
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

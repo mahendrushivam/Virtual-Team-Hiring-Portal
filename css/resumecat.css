@@ -1,0 +1,117 @@
+body{
+
+ background: #bdc0c2; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left,#000000 , ##bdc0c2); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #000000 , #bdc0c2);       
+}
+div.head {
+width:100%;
+ height:20%;
+ padding: 5px 0px 60px 20px;
+ margin: 0px 0px 0px 0px;
+ background: #232526; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #232526 , #0c0d0d); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #232526 , #0c0d0d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+ 
+ .glyphicon.glyphicon-plus-sign
+ {
+	 font-size:18px;
+	 padding:0px 0px 0px 15px;
+	 
+ }
+ 
+ #g1{
+	 padding:0px 0px 0px 45px;
+ }
+ #g2{
+	 padding:0px 0px 0px 6px;
+ }
+ 
+ #g3{
+	 padding:0px 0px 0px 47px;
+ }
+ #g4{
+	 padding:0px 0px 0px 82px;
+ }
+ 
+ #g5{
+	 padding:0px 0px 0px 67px;
+ }
+
+ #g6{
+	 padding:0px 0px 0px 97px;
+ } 
+  
+ #g7{
+	 padding:0px 0px 0px 93px;
+ }
+
+#g8{
+	 padding:0px 0px 0px 22px;
+ } 
+  
+#g9{
+	 padding:0px 0px 0px 54px;
+ }   
+  hr {
+    display: block;
+    margin-top: -1px;
+    margin-bottom: -2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+	border-color: #F7882F;
+}
+
+
+div.formm {
+border: 2px solid #333333;
+border-radius:5px;
+margin: 30px 400px 0px 360px;
+padding: 15px 10px 50px 30px;
+background: #5D4157; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #5D4157 , #A8CABA); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #5D4157 , #A8CABA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+width:40%;
+height:92%;
+}
+
+  
+  a:link, a:visited {
+    background: #232526; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #232526 , #0c0d0d); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #232526 , #0c0d0d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    margin:20px 0px 5px 1px;
+	padding: 12px 8px ;
+	border-radius: 2px;
+    text-align: left;
+    font-size:18px;
+	text-decoration: none;
+    display: inline-block;
+    height:8%;
+	width:35%;
+	}
+	
+	#pg{
+		margin:0px 0px 5px 75px;
+		
+	}
+ 
+ #ph{
+margin:5px 0px 5px 75px;	
+}
+	
+#h{
+margin:0px 0px 5px 75px;	
+}
+
+a:hover, a:active {
+    background: #16222A; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #16222A , #3A6073); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #16222A , #3A6073); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+        <style>
+        .sepia{ -webkit-filter: sepia(1);
+-webkit-filter: sepia(100%); -moz-filter: sepia(100%);
+-ms-filter: sepia(100%); -o-filter: sepia(100%);
+filter: url(sepia.svg#old-timey);
+filter: sepia(100%);
+background-color: #5E2612;
+filter: alpha(opacity = 50);
+zoom:1;
+}
+
+</style>
+  </head>
+  <body>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+    <script>
+	function myfunction()
+	{
+		document.getElementById("step1").style.filter= "grayscale(100%)";
+	}
+	function noblur()
+	{
+		document.getElementById("step1").style.filter="grayscale(0%)";
+	}
+	function myfunction1()
+	{
+		document.getElementById("step2").style.filter= "grayscale(100%)";
+	}
+	function noblur1()
+	{
+		document.getElementById("step2").style.filter="grayscale(0%)";
+	}
+	function myfunction2()
+	{
+		document.getElementById("step3").style.filter= "grayscale(100%)";
+	}
+	function noblur2()
+	{
+		document.getElementById("step3").style.filter="grayscale(0%)";
+	}
+	$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+
+		
+
+	</script>
+    <div class="container-fluid">
+    	<div class="row" style="align:center;padding-top:150px;">
+        	<div class="col-md-4">
+            	<div class="thumbnail">
+                	<img id="step1" src="images/Step1.jpg" alt="Step Image 1" >
+                    <div class="caption" style="text-align:center;">
+                    	<h3>Step 1 label</h3>
+                        <p><button type="button" class="btn btn-primary" onClick="myfunction()" id="b1" data-container="body" data-toggle="popover" data-placement="top" data-content="Step 1 Completed">Apply</button>
+                        <!--<button type="button" class="btn btn-danger" onClick="noblur()">Remove</button>--></p>	
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+            	<div class="thumbnail">
+                	<img id="step2" src="images/Step2.png" alt="Step Image 2">
+                    <div class="caption" style="text-align:center;">
+                    	<h3>Step 2 label</h3>
+                        <p><button id="apply1" type="button" class="btn btn-primary" onClick="myfunction1()" data-container="body" data-toggle="popover" data-placement="top" data-content="Step 2 Completed">Apply</button>
+                       <!-- <button type="button" id="remove1" class="btn btn-danger" onClick="noblur1()">Remove</button>--></p>	
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+            	<div class="thumbnail">
+                	<img id="step3" src="images/Step3.png" alt="Step Image 3">
+                    <div class="caption" style="text-align:center;">
+                    	<h3>Step 3 label</h3>
+                        <p><button type="button" id="apply2" class="btn btn-primary" onClick="myfunction2()" data-container="body" data-toggle="popover" data-placement="top" data-content="Step 3 Completed">Apply</button>
+                      <!--  <button type="button" id="remove2" class="btn btn-danger" onClick="noblur2()">Remove</button>--></p>	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

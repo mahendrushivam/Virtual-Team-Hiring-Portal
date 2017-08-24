@@ -1,0 +1,25 @@
+{
+  "name": "password_strength",
+  "version": "1.0.4",
+  "description": "This JQuery plugin helps to create a strong passwords which could resist brute-force attacks.",
+  "main": "password_strength/password_strength.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkurayan/password_strength.git"
+  },
+  "keywords": [
+    "password",
+    "strength",
+    "meter",
+    "indicator"
+  ],
+  "author": "Maxim Kurayan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkurayan/password_strength/issues"
+  },
+  "homepage": "https://mkurayan.github.io/password_strength"
+}

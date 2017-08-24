@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+
+<title>jQuery Password-Strength Plugin Demos</title>
+<style>
+.box{
+                font-family:Tahoma, Geneva, sans-serif;
+                font-size:16px;
+                color:#333;
+                padding:5px;
+                
+               
+        }
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="password_strength/password_strength_lightweight.js"></script>
+<link rel="stylesheet" type="text/css" href="password_strength/password_strength.css">
+
+<script>
+    $(document).ready(function($) {
+        
+
+        $('#mySecondPassword').strength_meter({
+            inputClass: 'c_strength_input',
+            strengthMeterClass: 'c_strength_meter',
+            toggleButtonClass: 'c_button_strength'
+        });
+
+        
+    });
+</script>
+
+</head>
+
+<body>
+
+
+
+   
+
+
+<div class="effects">
+       
+
+        
+        <div id="mySecondPassword" class="box" size="40"></div>
+
+        
+    
+
+
+  
+</div>
+</body>
+</html>

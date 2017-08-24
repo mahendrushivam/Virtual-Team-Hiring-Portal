@@ -1,0 +1,198 @@
+#accounts {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width:100%;
+}
+
+	#accounts th {
+    border: 1px solid #ddd;
+    padding: 8px;
+	font-size:16px;
+	
+}
+#accounts td{
+	padding:7px;
+	width:100px;
+}
+
+#accounts tr:nth-child(even){background-color: #f2f2f2;}
+
+#accounts tr:hover {background-color: #ddd;}
+
+#accounts th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #333;
+    color: white;
+	width:100px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+#modfirstname,#modlastname,#modgender,#modusername{
+	
+	width:48%;
+	overlay:hidden;
+	height:40px;
+	-webkit-border-radius:5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	padding-top:7px;
+	padding-left:8px;
+	font-size:18px;
+	background:rgba(118,169,227,0.7);
+	
+}
+
+#modemail,#modcomemail{
+	width:66.5%;
+	overlay:hidden;
+	height:40px;
+	-webkit-border-radius:5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	padding-top:7px;
+	padding-left:8px;
+	font-size:18px;
+	background:rgba(118,169,227,0.7);
+}
+
+#modaddress,#modcomaddress{
+	width:66.5%;
+	overlay:hidden;
+	height:100px;
+	-webkit-border-radius:5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	padding-top:7px;
+	padding-left:8px;
+	font-size:18px;
+	background:rgba(118,169,227,0.7);
+}
+
+#modcompanyname,#modcomfirstname,#modcomlastname,#modcomusername
+{
+	width:41%;
+	overlay:hidden;
+	height:40px;
+	-webkit-border-radius:5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	padding-top:7px;
+	padding-left:8px;
+	font-size:18px;
+	background:rgba(118,169,227,0.7);
+}
+
+
+
+* {padding:0; margin:0;}
+.main-nav {width:250px;height:465px;background: #333;}
+.main-nav li {list-style: none;}
+.main-nav a {
+	color: #FFF;
+	
+	letter-spacing: .2em;
+	text-decoration: none;
+	display: block;
+	padding: 10px 0 10px 20px;
+	border-bottom: 1px dotted gray;
+}
+.main-nav a:hover {background: #566573  ;}
+.main-nav-ul ul {display: none;}
+.main-nav-ul li.tap ul {display: block;}
+
+.main-nav-ul ul a:before {
+	content: '\203A';
+	margin-right: 20px;
+}
+
+.main-nav .sub-arrow:after {
+	content: '\203A';
+	float: right;
+	margin-right: 20px;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+}
+.main-nav li.tap .sub-arrow:after {
+	content: '\2039';
+}
+
+ul.topnav1 {
+  list-style-type: none;
+  margin: 0px;
+  padding-top: 0px;
+  overflow: hidden;
+  position:fixed;
+  top:0px;
+  background-color: #333;
+  width:100%;
+  
+ 
+  }
+ul.topnav1 li {float: left;}
+
+ul.topnav1 li a  {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}

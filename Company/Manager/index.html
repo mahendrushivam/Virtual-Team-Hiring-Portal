@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Multi-select Dropdown List with Checkbox by CodexWorld</title>
+<link href="jquery.multiselect.css" rel="stylesheet" type="text/css">
+<style>
+body { font-family:'Open Sans' Arial, Helvetica, sans-serif}
+ul,li { margin:0; padding:0; list-style:none;}
+.label { color:#000; font-size:16px;}
+</style>
+</head>
+<body>
+<?php
+include("dbconnect.php");
+mysqli_select_db($con,"minorproject");
+$sql="select username from companyemployees";
+$result=mysqli_query($con,$sql);
+$count=mysqli_num_rows($result);
+
+?>
+
+
+<select name="langOpt3[]" multiple id="langOpt3">
+
+<option value=""> Select Team Member</option>
+<?php
+		if($count>0)
+		{
+		
+		 while($row=mysqli_fetch_row($result)){ 
+               echo '<option value="'.$row[0].'">'.$row[0].'</option>'; 
+		
+				
+		
+		}
+		}
+
+?>
+</select>
+
+
+
+
+
+<script src="jquery.min.js"></script>
+<script src="jquery.multiselect.js"></script>
+<script>
+
+
+$('#langOpt3').multiselect({
+    columns: 1,
+    placeholder: 'Select Languages',
+    search: true,
+    selectAll: true
+});
+
+
+</script>
+</body>
+</html>

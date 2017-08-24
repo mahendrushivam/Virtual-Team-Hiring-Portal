@@ -1,0 +1,25 @@
+<html>
+	<head>
+	</head>
+	<body>
+	<?php
+	include("dbconnect.php");
+	mysqli_select_db($con,"minorproject");
+	$query='';
+	$query="select * from feedback";
+	$result=mysqli_query($con,$sql);
+	$count=mysqli_num_rows($result);
+	
+	?>
+	<table id="feedback" style="margin-top:1px;">
+		
+				<tr style="border-top:2px solid white;">
+				<th> S.no </th>
+				<th> Name </th>
+				<th> Subject</th>
+				<th style="border:0px;"> </th>
+				</tr>
+			
+</table>			
+	</body>
+</html>

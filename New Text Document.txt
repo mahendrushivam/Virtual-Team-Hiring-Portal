@@ -1,0 +1,7 @@
+<?php
+require_once("class-Clockwork.php");
+$apikey='56d172a738c90558f3681fe8585a39c39d573a1c';
+$clockwork= new Clockwork($apikey);
+$message=array('to' => '9971339984','message' =>'This is a text message');
+$done=$clockwork->send($message);
+?>
